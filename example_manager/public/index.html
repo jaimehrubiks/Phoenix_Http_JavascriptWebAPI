@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>The HTML5 Herald</title>
+        <meta name="description" content="Gyroscope">
+        <meta name="author" content="JaimehRubiks">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <style>
+         .garden {
+             position: relative;
+             width : 200px;
+             height: 200px;
+             border: 5px solid #CCC;
+             border-radius: 10px;
+         }
+
+         .ball {
+             position: absolute;
+             top   : 90px;
+             left  : 90px;
+             width : 20px;
+             height: 20px;
+             background: green;
+             border-radius: 100%;
+         }
+         h1{
+             font-size: 24px;
+         }
+         h2{
+             font-size: 16px;
+         }
+        </style>
+    </head>
+
+
+    <body>
+        <h1>Detected Devices</h1>
+        <table id="netlist">
+            <tr><th>Name</th><th>IP</th><th>Add</th></tr>
+        </table>
+        <h1>Selected Devices</h1>
+        <ul id="selectedlist"></ul>
+        <h1>Commands</h1>
+        <h2>Movement</h2>
+        <button id="stop">Stop</button>
+        <button id="forwards">Forwards</button>
+        <button id="backwards">Backwards</button>
+        <button id="right">Right</button>
+        <button id="left">Left</button>
+
+        <h2>Gyroscope<h2>
+        <button id="enablegy">Enable gyroscope Control</button>
+        <button id="disablegy">Disable gyroscope Control</button>
+
+        <div id="movecontrol">
+        <div class="garden">
+            <div class="ball"></div>
+        </div>
+        <pre class="output"></pre>
+        </div>
+
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="./js/jquery.js"></script> 
+        <script type="text/javascript" src="./phoenixjs.js"></script> 
+        <script type="text/javascript" src="./js/script.js"></script> 
+
+    </body>
+</html>
