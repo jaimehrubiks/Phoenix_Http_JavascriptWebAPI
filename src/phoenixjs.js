@@ -68,4 +68,12 @@
         httpGet(this.url+'/servos/'+1+'/'+movement[1]);
     };
 
+    // Ultrasound read
+    Phoenixjs.prototype.getUltrasound = function(){
+        httpGet(this.url+'/ultrasound', function(response){
+            console.log(response);
+        });
+    };
+
+
 }());
