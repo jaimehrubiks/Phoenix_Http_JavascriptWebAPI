@@ -69,9 +69,9 @@
     };
 
     // Ultrasound read
-    Phoenixjs.prototype.getUltrasound = function(){
+    Phoenixjs.prototype.getUltrasound = function(callback){
         httpGet(this.url+'/ultrasound', function(response){
-            console.log(response);
+            if(callback){ callback(response); }
         });
     };
 
