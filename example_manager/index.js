@@ -12,6 +12,7 @@ var networks = [];
 // });
 
 app.get('/networks', function (req, res) {
+    console.log('Sending networks: ' + networks);
     res.send(JSON.stringify(networks));
 });
 
